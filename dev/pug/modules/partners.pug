@@ -1,0 +1,6 @@
+section.partners
+	h3.partners__title Наши партнёры
+	.partners__list
+		each val in ['partners1','partners2','partners3','partners4','partners5']
+			.partners__item
+				img.partners__img(src="app/img/content/partners/" + val + ".png" alt="Фото" + val)

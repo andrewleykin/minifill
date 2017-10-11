@@ -1,0 +1,25 @@
+.header__wrap
+	display flex
+	justify-content space-between
+	align-items center
+
+.header__logo
+	.logo
+		min-width 288px
+
+.header__contacts
+	text-align right
+	font-family boldFont  
+
+.header__phone
+	display block
+	margin-bottom 5px
+	@extend .trs
+	&:hover
+		color accentColor
+
+.header__mail
+	color accentColor
+	@extend .trs
+	&:hover
+		color blackColor

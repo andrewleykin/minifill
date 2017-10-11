@@ -1,0 +1,8 @@
+section.problem
+	.container
+		h3.problem__title Дозатор призван решать ваши проблемы
+		.problem__block
+			each object in content.problem
+				.problem__item
+					span.problem__subtitle= object["title"]
+					p.problem__text= object["text"]

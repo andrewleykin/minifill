@@ -1,0 +1,17 @@
+section.about
+	.container
+		.about__wrap
+			h2.about__title Универсальный дозатор для любых пищевых масс
+			h4.about__descr Когда нужна автоматизация дозировки и когда не успевают работать руками.
+			button.g-btn.about__btn Узнать подробнее
+			.about__video
+				iframe(src='https://www.youtube.com/embed/cIyVNoY3_L4?showinfo=0', frameborder='0', allowfullscreen='')
+			.about__info
+				.about__block
+					img.about__img(src="app/img/general/minifill.jpg" alt="Фото доазатора Минифилл")
+				.about__block
+					span.about__subtitle Дозатор Mini-fill
+					ul.about__list
+						each object in content.content
+							li.about__item= object["text"]
+					button.g-btn.g-btn--order.about__btn--order Хочу заказать

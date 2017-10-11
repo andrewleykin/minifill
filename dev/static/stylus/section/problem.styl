@@ -1,0 +1,42 @@
+.problem
+	padding 130px 0
+	background url("../img/general/problem-bg.jpg") center center no-repeat
+	background-size cover
+
+.problem__title
+	@extend .title
+	color white
+	margin-bottom 80px
+
+.problem__block
+	background accentColor
+	border-radius 10px
+	color white
+	padding 90px 30px 20px 50px
+	display flex
+	justify-content space-between
+	flex-wrap: wrap
+
+.problem__item
+	width 100%
+	max-width 500px
+	margin-bottom 80px
+	padding-left 50px
+	position relative
+	&:before
+		content ""
+		display block
+		position(absolute, $top:0,$left:0)
+		background url("../img/general/check.png") center center no-repeat
+		background-size cover
+		size(35px)
+
+.problem__subtitle
+	display block
+	font-family antipastoExtra
+	font-size 30px
+	text-transform uppercase
+	margin-bottom 35px
+
+.problem__text
+	font-size 25px

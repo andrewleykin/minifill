@@ -1,0 +1,19 @@
+section.advantage
+	.container
+		h3.advantage__title Преимущества дозатора
+		.advantage__list
+			each object,i in content.advantage
+				.advantage__item
+					span.advantage__subtitle= object["title"]
+					- if(i == 2) {
+						p.advantage__text= object["text"]
+						p.advantage__text= object["text2"]
+						p.advantage__text= object["text3"]
+					- } else {
+						p.advantage__text= object["text"]
+					- }
+		.advantage__order
+			.advantage__price Стоимость: 
+				span.advantage__price--small от 1800
+				+icon('euro')
+			button.g-btn.advantage__btn Хочу заказать

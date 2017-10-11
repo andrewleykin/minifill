@@ -1,0 +1,82 @@
+.consult
+	padding 230px 0
+	background url("../img/general/consult-bg.jpg") center center no-repeat
+	background-size cover
+
+.consult__block
+	width 100%
+	max-width 460px
+	margin-left auto
+	text-align center
+	border-radius 5px
+	box-shadow 0px 0px 20px -2px rgba(#000, .7)
+	padding 55px 65px 15px 55px
+	margin-right 70px
+	background #FFF
+
+.consult__title
+	margin-bottom 40px
+	font-size 18px
+
+
+// consult-form
+
+.consult-form__input
+	width 100%
+	border 1px solid #a3a2a2
+	padding 15px 25px
+	border-radius 10px
+	margin-bottom 30px
+	font-style italic
+	color #a3a2a2
+
+.consult-form__submit
+	display block
+	width 100%
+	font-size 22px
+	text-align center
+	background accentColor
+	color white
+	padding 10px 0
+	border-radius 5px
+	cursor pointer
+	margin-bottom 20px
+	@extend .trs
+	&:hover
+		background darken(accentColor, 20%)
+	&:active
+		background darken(accentColor, 20%)
+		transform translateY(2px)
+
+.consult-form__checkbox-block
+	text-align left
+	padding-left 30px
+
+.consult-form__checkbox
+	display none
+
+.consult-form__label
+	font-size 12px
+	font-family regularFont
+	position relative
+	cursor pointer
+	&:before,&:after
+		content ""
+		display block
+		size(15px)
+		absolute($top:0,$left:-20px)
+	&:before
+		border 2px solid accentColor
+	&:after
+		background url("../img/general/checked.png") no-repeat center center
+		background-size 80%
+		opacity 0
+		@extend .trs
+
+.consult-form__checkbox:checked~.consult-form__label::after
+	opacity 1
+
+.consult-form__link
+	text-decoration underline
+	&:hover
+		text-decoration none

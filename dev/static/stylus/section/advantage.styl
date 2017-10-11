@@ -1,0 +1,60 @@
+.advantage
+	padding 110px 0 70px 100px
+	background url(../img/general/advantage-bg.jpg) center center no-repeat
+	background-size cover
+	color white
+
+.advantage__title
+	@extend .title
+	text-align left
+	margin-bottom 50px
+
+.advantage__list
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+	margin-bottom 60px
+
+.advantage__item
+	width 100%
+	max-width 500px
+	&:last-child
+		max-width 100%
+		margin-top 40px
+		.advantage__text
+			margin-bottom 40px
+	&:before
+		content ""
+		display block
+		background url("../img/general/check.png") center center no-repeat
+		background-size cover
+		size(35px)
+		margin-bottom 20px
+
+.advantage__subtitle
+	display block
+	font-family antipastoExtra
+	font-size 33px
+	margin-bottom 35px
+
+.advantage__text
+	font-size 25px
+
+
+.advantage__order
+	display flex
+	justify-content space-between
+
+.advantage__price
+	font-size 47px
+	font-family aristaFat
+	.icon
+		fill white
+		size(30px,40px)
+
+.advantage__price--small
+	font-size 45px
+	font-family boldFont
+
+.advantage__btn
+	margin-right 30px
