@@ -25,6 +25,7 @@
                     <li class="menu__item"><a class="menu__link" href="#">Галерея</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
                   </ul>
+                  <div class="menu__humburger">Меню<span></span></div>
                 </nav>
               </div>
               <div class="header__contacts"><a class="header__phone" href="tel:+74952680658">+7 495 268 06 58</a><a class="header__mail" href="mailto:mf@air-bake.ru">mf@air-bake.ru</a></div>
@@ -134,6 +135,59 @@
             </div>
           </div>
         </section>
+        <footer class="footer">
+          <div class="footer__left">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A76828a002ab8bb939b8e2a05c5c1b02803047d534559c5e22823933ed93780aa&amp;lang=ru_RU&amp;scroll=true&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+          <div class="footer__right">
+            <h3 class="footer__title">Контакты</h3>
+            <div class="footer__contacts">
+              <div class="footer__place">
+                <svg class="icon icon-place ">
+                  <use xlink:href="/static/img/svg/symbol/sprite.svg#place"></use>
+                </svg><span class="footer__text">123308, Москва, 3-й Силикатный проезд, <br>д.4, корп.1</span>
+              </div>
+              <div class="footer__phone">
+                <svg class="icon icon-phone ">
+                  <use xlink:href="/static/img/svg/symbol/sprite.svg#phone"></use>
+                </svg><a href="tel:+74952680658">+7 495 268 06 58</a>
+              </div>
+              <div class="footer__mail">
+                <svg class="icon icon-mail ">
+                  <use xlink:href="/static/img/svg/symbol/sprite.svg#mail"></use>
+                </svg><a href="mailto:mf@air-bake.ru">mf@air-bake.ru</a>
+              </div>
+            </div>
+            <div class="footer__social"><a href="#">
+                <svg class="icon icon-inst ">
+                  <use xlink:href="/static/img/svg/symbol/sprite.svg#inst"></use>
+                </svg></a><a href="#">
+                <svg class="icon icon-vk ">
+                  <use xlink:href="/static/img/svg/symbol/sprite.svg#vk"></use>
+                </svg></a><a href="#">
+                <svg class="icon icon-fb ">
+                  <use xlink:href="/static/img/svg/symbol/sprite.svg#fb"></use>
+                </svg></a><a href="#">
+                <svg class="icon icon-youtube ">
+                  <use xlink:href="/static/img/svg/symbol/sprite.svg#youtube"></use>
+                </svg></a>
+            </div>
+            <h4 class="footer__subtitle">задать вопрос</h4>
+            <form class="footer-form">
+              <input class="footer-form__input" type="text" name="topic" id="topic" placeholder="тема сообщения" required>
+              <div class="footer-form__row">
+                <input class="footer-form__input" type="text" name="name" id="name" placeholder="ваше имя" required>
+                <input class="footer-form__input" type="text" name="email" id="email" placeholder="ваш email" required>
+              </div>
+              <textarea class="footer-form__textarea" name="message" id="message" placeholder="ваше сообщение" required></textarea>
+              <input class="g-btn g-btn--form footer-form__submit" type="submit" value="Отправить">
+              <div class="consult-form__checkbox-block footer-form__checkbox-block">
+                <input class="consult-form__checkbox" type="checkbox" name="check2" id="check2" required>
+                <label class="consult-form__label" for="check2">Подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности, даю согласие на обработку персональных данных <a class="consult-form__link" href="#">Узнать больше</a></label>
+              </div>
+            </form>
+          </div>
+        </footer>
       </div>
       <script src="app/js/libs.min.js"></script>
       <script src="app/js/app.js"></script>

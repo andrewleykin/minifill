@@ -1,0 +1,33 @@
+footer.footer
+	.footer__left
+		iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3A76828a002ab8bb939b8e2a05c5c1b02803047d534559c5e22823933ed93780aa&lang=ru_RU&scroll=true&source=constructor', width='100%', height='100%', frameborder='0')
+	.footer__right
+		h3.footer__title Контакты
+		.footer__contacts
+			.footer__place
+				+icon('place')
+				span.footer__text 123308, Москва, 3-й Силикатный проезд, 
+					br
+					| д.4, корп.1
+			.footer__phone
+				+icon('phone')
+				a(href="tel:+74952680658") +7 495 268 06 58
+			.footer__mail
+				+icon('mail')
+				a(href="mailto:mf@air-bake.ru") mf@air-bake.ru
+		.footer__social
+			each val in ['inst','vk','fb','youtube']
+				a(href="#")
+					+icon(val)
+		h4.footer__subtitle задать вопрос
+		form.footer-form
+			input.footer-form__input(type="text" name="topic" id="topic" placeholder="тема сообщения" required)
+			.footer-form__row
+				input.footer-form__input(type="text" name="name" id="name" placeholder="ваше имя" required)
+				input.footer-form__input(type="text" name="email" id="email" placeholder="ваш email" required)
+			textarea.footer-form__textarea(name="message" id="message" placeholder="ваше сообщение" required)
+			input.g-btn.g-btn--form.footer-form__submit(type="submit" value="Отправить")
+			.consult-form__checkbox-block.footer-form__checkbox-block
+				input.consult-form__checkbox(type="checkbox" name="check2" id="check2" required)
+				label.consult-form__label(for="check2") Подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности, даю согласие на обработку персональных данных 
+					a.consult-form__link(href="#") Узнать больше

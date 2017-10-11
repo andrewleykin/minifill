@@ -41,7 +41,15 @@ size(a, b = false)
 	else
 		height a
 
-
+placeholder()
+	&::-webkit-input-placeholder
+		{block}
+	&:-moz-placeholder
+		{block}
+	&::-moz-placeholder
+		{block}
+	&:-ms-input-placeholder
+		{block}
 
 // extend
 
@@ -53,3 +61,9 @@ size(a, b = false)
 	text-transform uppercase
 	font-family aristaFat
 	font-size 53px 
+	@media (max-width:960px)
+		font-size 45px
+	@media (max-width:700px)
+		font-size 40px
+	@media (max-width:480px)
+		font-size 34px

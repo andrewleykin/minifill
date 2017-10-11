@@ -1,7 +1,9 @@
 .able
 	padding 70px 0
 	background url("../img/general/able-bg.jpg") center center no-repeat
-	background-size cover 
+	background-size cover
+	@media (max-width:960px)
+		padding 50px 0
 
 .able__title
 	font-family antipastoBold
@@ -9,7 +11,12 @@
 	text-transform uppercase
 	text-align center
 	margin-bottom 50px
+	@media (max-width:960px)
+		margin-bottom 30px
+		font-size 28px
 
 .able__img
 	height auto
 	margin-right 30px
+	@media (max-width:960px)
+		margin-right 15px

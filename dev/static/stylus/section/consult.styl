@@ -2,6 +2,10 @@
 	padding 230px 0
 	background url("../img/general/consult-bg.jpg") center center no-repeat
 	background-size cover
+	@media (max-width:960px)
+		padding 170px 0
+	@media (max-width:700px)
+		padding 140px 0
 
 .consult__block
 	width 100%
@@ -13,10 +17,17 @@
 	padding 55px 65px 15px 55px
 	margin-right 70px
 	background #FFF
+	@media (max-width:960px)
+		padding 30px 40px 10px
+	@media (max-width:700px)
+		padding 20px 10px 10px
+
 
 .consult__title
 	margin-bottom 40px
 	font-size 18px
+	@media (max-width:700px)
+		margin-bottom 20px
 
 
 // consult-form
@@ -29,6 +40,10 @@
 	margin-bottom 30px
 	font-style italic
 	color #a3a2a2
+	@media (max-width:700px)
+		margin-bottom 20px
+	&:focus
+		border-color accentColor
 
 .consult-form__submit
 	display block
@@ -45,8 +60,7 @@
 	&:hover
 		background darken(accentColor, 20%)
 	&:active
-		background darken(accentColor, 20%)
-		transform translateY(2px)
+		background darken(accentColor, 40%)
 
 .consult-form__checkbox-block
 	text-align left
