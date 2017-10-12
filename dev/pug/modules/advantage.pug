@@ -1,6 +1,6 @@
 section.advantage.menu__section(data-article="advantage")
 	.container
-		h3.advantage__title Преимущества дозатора
+		h3.advantage__title= content.advantages.title
 		.advantage__list
 			each object,i in content.advantage
 				.advantage__item
@@ -13,7 +13,7 @@ section.advantage.menu__section(data-article="advantage")
 						p.advantage__text= object["text"]
 					- }
 		.advantage__order
-			.advantage__price Стоимость: 
-				span.advantage__price--small от 1800
+			.advantage__price= content.advantages.price
+				span.advantage__price--small= content.advantages.priceSmall
 				+icon('euro')
-			button.g-btn.advantage__btn(data-remodal-target="order") Хочу заказать
+			button.g-btn.advantage__btn(data-remodal-target="order")= content.about.btnOrder
