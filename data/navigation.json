@@ -2,19 +2,19 @@
   "main": [
   	{
   		"title": "О дозаторе",
-  		"link": "#"
+  		"link": "#about"
   	},
   	{
   		"title": "Преимущества",
-  		"link": "#"
+  		"link": "#advantage"
   	},
   	{
   		"title": "Галерея",
-  		"link": "#"
+  		"link": "#able"
   	},
   	{
   		"title": "Контакты",
-  		"link": "#"
+  		"link": "#footer"
   	}
   ]
 }

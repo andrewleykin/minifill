@@ -20,10 +20,10 @@
               <div class="header__nav">
                 <nav class="menu">
                   <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="#">О дозаторе</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Преимущества</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Галерея</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#about">О дозаторе</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#advantage">Преимущества</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#able">Галерея</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#footer">Контакты</a></li>
                   </ul>
                   <div class="menu__humburger">Меню<span></span></div>
                 </nav>
@@ -37,11 +37,11 @@
             <div class="about__wrap">
               <h2 class="about__title">Универсальный дозатор для любых пищевых масс</h2>
               <h4 class="about__descr">Когда нужна автоматизация дозировки и когда не успевают работать руками.</h4>
-              <button class="g-btn about__btn">Узнать подробнее</button>
+              <button class="g-btn about__btn" data-remodal-target="order">Узнать подробнее</button>
               <div class="about__video">
                 <iframe src="https://www.youtube.com/embed/cIyVNoY3_L4?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
               </div>
-              <div class="about__info">
+              <div class="about__info menu__section" data-article="about">
                 <div class="about__block"><img class="about__img" src="app/img/general/minifill.jpg" alt="Фото доазатора Минифилл"></div>
                 <div class="about__block"><span class="about__subtitle">Дозатор Mini-fill</span>
                   <ul class="about__list">
@@ -52,13 +52,13 @@
                     <li class="about__item">Мы готовы предложить вам именно то, что вам нужно!</li>
                     <li class="about__item">Пожалуйста, обратитесь в нашу компанию для получения необходимой информации.</li>
                   </ul>
-                  <button class="g-btn g-btn--order about__btn--order">Хочу заказать</button>
+                  <button class="g-btn g-btn--order about__btn--order" data-remodal-target="order">Хочу заказать</button>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="able">
+        <section class="able menu__section" data-article="able">
           <h3 class="able__title">На что способен дозатор Minifill</h3>
           <div class="able__list"><img class="able__img" src="app/img/content/able/able1.jpg" alt="Фото able1"><img class="able__img" src="app/img/content/able/able2.jpg" alt="Фото able2"><img class="able__img" src="app/img/content/able/able3.jpg" alt="Фото able3"><img class="able__img" src="app/img/content/able/able4.jpg" alt="Фото able4"><img class="able__img" src="app/img/content/able/able5.jpg" alt="Фото able5"><img class="able__img" src="app/img/content/able/able8.jpg" alt="Фото able8">
           </div>
@@ -92,7 +92,7 @@
             </div>
           </div>
         </section>
-        <section class="advantage">
+        <section class="advantage menu__section" data-article="advantage">
           <div class="container">
             <h3 class="advantage__title">Преимущества дозатора</h3>
             <div class="advantage__list">
@@ -114,7 +114,7 @@
                   <use xlink:href="/app/img/svg/symbol/sprite.svg#euro"></use>
                 </svg>
               </div>
-              <button class="g-btn advantage__btn">Хочу заказать</button>
+              <button class="g-btn advantage__btn" data-remodal-target="order">Хочу заказать</button>
             </div>
           </div>
         </section>
@@ -135,7 +135,23 @@
             </div>
           </div>
         </section>
-        <footer class="footer">
+        <div class="order">
+          <div class="remodal order__block" data-remodal-id="order">
+            <button class="remodal-close" data-remodal-action="close"></button>
+            <h4 class="consult__title">Получить консультанцию</h4>
+            <form class="consult-form">
+              <input class="consult-form__input" type="text" name="name" id="name" placeholder="имя" required>
+              <input class="consult-form__input" type="text" name="phone" id="phone" placeholder="телефон" required>
+              <input class="consult-form__input" type="text" name="email" id="email" placeholder="email" required>
+              <input class="consult-form__submit" type="submit" value="Отправить">
+              <div class="consult-form__checkbox-block">
+                <input class="consult-form__checkbox" type="checkbox" name="check" id="check" required>
+                <label class="consult-form__label" for="check">Подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности, даю согласие на обработку персональных данных <a class="consult-form__link" href="#">Узнать больше</a></label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <footer class="footer menu__section" data-article="footer">
           <div class="footer__left">
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A76828a002ab8bb939b8e2a05c5c1b02803047d534559c5e22823933ed93780aa&amp;lang=ru_RU&amp;scroll=true&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
           </div>
@@ -144,32 +160,32 @@
             <div class="footer__contacts">
               <div class="footer__place">
                 <svg class="icon icon-place ">
-                  <use xlink:href="app/img/svg/symbol/sprite.svg#place"></use>
+                  <use xlink:href="/app/img/svg/symbol/sprite.svg#place"></use>
                 </svg><span class="footer__text">123308, Москва, 3-й Силикатный проезд, <br>д.4, корп.1</span>
               </div>
               <div class="footer__phone">
                 <svg class="icon icon-phone ">
-                  <use xlink:href="app/img/svg/symbol/sprite.svg#phone"></use>
+                  <use xlink:href="/app/img/svg/symbol/sprite.svg#phone"></use>
                 </svg><a href="tel:+74952680658">+7 495 268 06 58</a>
               </div>
               <div class="footer__mail">
                 <svg class="icon icon-mail ">
-                  <use xlink:href="app/img/svg/symbol/sprite.svg#mail"></use>
+                  <use xlink:href="/app/img/svg/symbol/sprite.svg#mail"></use>
                 </svg><a href="mailto:mf@air-bake.ru">mf@air-bake.ru</a>
               </div>
             </div>
             <div class="footer__social"><a href="#">
                 <svg class="icon icon-inst ">
-                  <use xlink:href="app/img/svg/symbol/sprite.svg#inst"></use>
+                  <use xlink:href="/app/img/svg/symbol/sprite.svg#inst"></use>
                 </svg></a><a href="#">
                 <svg class="icon icon-vk ">
-                  <use xlink:href="app/img/svg/symbol/sprite.svg#vk"></use>
+                  <use xlink:href="/app/img/svg/symbol/sprite.svg#vk"></use>
                 </svg></a><a href="#">
                 <svg class="icon icon-fb ">
-                  <use xlink:href="app/img/svg/symbol/sprite.svg#fb"></use>
+                  <use xlink:href="/app/img/svg/symbol/sprite.svg#fb"></use>
                 </svg></a><a href="#">
                 <svg class="icon icon-youtube ">
-                  <use xlink:href="app/img/svg/symbol/sprite.svg#youtube"></use>
+                  <use xlink:href="/app/img/svg/symbol/sprite.svg#youtube"></use>
                 </svg></a>
             </div>
             <h4 class="footer__subtitle">задать вопрос</h4>
@@ -180,11 +196,11 @@
                 <input class="footer-form__input" type="text" name="email" id="email" placeholder="ваш email" required>
               </div>
               <textarea class="footer-form__textarea" name="message" id="message" placeholder="ваше сообщение" required></textarea>
-              <input class="g-btn g-btn--form footer-form__submit" type="submit" value="Отправить">
               <div class="consult-form__checkbox-block footer-form__checkbox-block">
                 <input class="consult-form__checkbox" type="checkbox" name="check2" id="check2" required>
                 <label class="consult-form__label" for="check2">Подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности, даю согласие на обработку персональных данных <a class="consult-form__link" href="#">Узнать больше</a></label>
               </div>
+              <input class="g-btn g-btn--form footer-form__submit" type="submit" value="Отправить">
             </form>
           </div>
         </footer>

@@ -55,5 +55,37 @@
 				flag = true;
 			}
 		});
-	 svg4everybody();
+})();
+
+// Функция для навигации по меню
+
+(function () {
+
+	let link = $('.menu__link'),
+		item = $('.menu__section');
+
+	link.click(function(e) {
+		e.preventDefault();
+
+		showArticle($(this).attr('href'), true);
+	});
+
+	function showArticle(article, isAnimate) {
+		var direction = article.replace(/#/, ''),
+			reqArticle = item.filter('[data-article="' + direction + '"]'),
+			reqArticlePos = reqArticle.offset().top;
+
+		if (isAnimate) {
+			$('body, html').animate({scrollTop: reqArticlePos}, 1000);
+		}
+	}
+
+})();
+$(document).ready(function () {
+    svg4everybody({});
+});
+// Библиотека wow.js для анимации
+
+(function () {
+	new WOW().init();
 })();

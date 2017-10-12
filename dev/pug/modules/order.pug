@@ -1,0 +1,13 @@
+.order
+	.remodal.order__block(data-remodal-id="order")
+		button.remodal-close(data-remodal-action="close")
+		h4.consult__title Получить консультанцию
+		form.consult-form
+			input.consult-form__input(type="text" name="name" id="name" placeholder="имя" required)
+			input.consult-form__input(type="text" name="phone" id="phone" placeholder="телефон" required)
+			input.consult-form__input(type="text" name="email" id="email" placeholder="email" required)
+			input.consult-form__submit(type="submit" value="Отправить")
+			.consult-form__checkbox-block
+				input.consult-form__checkbox(type="checkbox" name="check" id="check" required)
+				label.consult-form__label(for="check") Подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности, даю согласие на обработку персональных данных 
+					a.consult-form__link(href="#") Узнать больше
